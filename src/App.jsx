@@ -1,34 +1,27 @@
-import React, { useState, useMemo } from "react";
+import { useState } from 'react'
+import './App.css'
+import HijoA from './components/HijoA'
+import HijoB from './components/HijoB'
+import HijoC from './components/HijoC'
 
-function Parent() {
-  const [count, setCount] = useState(0);
-  const [dark, setDark] = useState(false);
+function App() {
+  const [count, setCount] = useState(0)
 
-  const styles = useMemo(() => {
-    return {
-      color: dark ? "white" : "black",
-      backgroundColor: dark ? "black" : "white"
-    };
-  }, [dark]); 
-  
+  console.log("Render App");
+
   return (
     <div>
-      <button onClick={() => setCount(c => c + 1)}>
-        Count: {count}
+      <h1>Contador: {count}</h1>
+
+      <button onClick={() => setCount(count + 1)}>
+        Incrementar
       </button>
 
-      <button onClick={() => setDark(d => !d)}>
-        Toggle Theme
-      </button>
-
-      <Child styles={styles} />
+      <HijoA />
+      <HijoB />
+      <HijoC />
     </div>
   );
 }
 
-const Child = React.memo(function Child({ styles }) {
-  console.log("Child re-rendered");
-  return <div style={styles}>I am a child component</div>;
-});
-
-export default Parent;
+export default App

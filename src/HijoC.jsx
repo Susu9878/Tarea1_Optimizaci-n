@@ -1,7 +1,8 @@
+import { memo } from "react";
 
-function HijoC(){
+const HijoA = memo(function HijoC() {
     console.log("Render HijoC");
-    return <p> Soy Hijo C</p>
-}
-
+    return <p>Soy HijoC</p>;
+});
+ 
 export default HijoC;
