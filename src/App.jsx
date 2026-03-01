@@ -1,8 +1,9 @@
 import { useState } from 'react'
 import './App.css'
-import HijoA from './components/HijoA'
-import HijoB from './components/HijoB'
-import HijoC from './components/HijoC'
+import HijoA from './HijoA'
+import HijoB from './HijoB'
+import HijoC from './HijoC'
+import DynamicList from './dynamicList'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -20,6 +21,8 @@ function App() {
       <HijoA />
       <HijoB />
       <HijoC />
+
+      <DynamicList />
     </div>
   );
 }
