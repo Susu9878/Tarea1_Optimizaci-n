@@ -6,6 +6,7 @@ Patricio Flores Reynoso A01645013
 Cared Nicolle Castaños Manjarrez A01742620
 
 ### Cared Nicolle Castaños
+Me encargué de la investigación de Virtual DOM, asi como la base de los componentes hijos usados de ejemplo en la App principal.
 
 ### Santiago Alonzo 
 
