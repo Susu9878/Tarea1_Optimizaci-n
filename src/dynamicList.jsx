@@ -24,10 +24,16 @@ function DynamicList() {
     setElementos(elementos.filter((_, i) => i !== index));
   };
 
+  const InvertirLista = () => {
+    setElementos([...elementos].reverse());
+  }
+
   console.log("Render List");
 
   return (
       <div>
+        <button onClick={InvertirLista}> Invertir Lista</button>
+        
         <div style={{ marginBottom: '1rem' }}>
           <input
               type="text"

@@ -9,6 +9,7 @@ Cared Nicolle Castaños Manjarrez A01742620
 Me encargué de la investigación de Virtual DOM, asi como la base de los componentes hijos usados de ejemplo en la App principal.
 
 ### Santiago Alonzo 
+Me encarge de revertir el orden de la lista. Use el use state de elementos implementado por patricio.
 
 ### Hannia Escamilla
 Yo me encargue de hacer el boton de likes y el contador de estos de la lista dinamica. Lo que hice fue crear una funcion llamada "Like" en la que implemente el boton con su contador, use el onClick para manejar el contador de likes. Luego llame a esa funcion dentro de la lista dinamica para que apareciera en cada elemento.
